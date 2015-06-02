@@ -21,3 +21,19 @@
 
 en:
   hello: "Hello world"
+  user:
+    user:
+      one: Nutzer
+      other: Nutzer
+    firstname: Vorname
+    middlename: 2. Vorname
+    lastname: Nachname
+    title: Titel
+    sex: Geschlecht
+    sexes:
+      m: männlich
+      f: weiblich
+    salutation: Anrede
+    password: Passwort
+    roles: Rollen
+    status: Status

@@ -18,6 +18,7 @@ gem 'pundit'
 gem 'therubyracer', :platform=>:ruby
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'bitmask_attributes'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil

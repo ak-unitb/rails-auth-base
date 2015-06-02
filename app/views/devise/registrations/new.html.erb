@@ -3,8 +3,31 @@
     <h3>Sign up</h3>
     <%= devise_error_messages! %>
     <div class="form-group">
-      <%= f.label :name %>
-      <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
+      <%= f.label :firstname %>
+      <%= f.text_field :firstname, :autofocus => true, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :middlename %>
+      <%= f.text_field :middlename, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :lastname %>
+      <%= f.text_field :lastname, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control', list: 'titles' %>
+      <datalist id="titles">
+        <option value="">
+        <option value="Dr.">
+        <option value="Prof. Dr.">
+        <option value="Graf">
+        <option value="Herzog">
+      </datalist> 
+    </div>
+    <div class="form-group">
+      <%= f.label :sex, t( "user.sex" ) %><br>
+      <%= f.select  :sex, t( "user.sexes" ).invert, :selected => @user.sex %>
     </div>
     <div class="form-group">
       <%= f.label :email %>
